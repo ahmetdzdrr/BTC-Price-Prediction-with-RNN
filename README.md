@@ -17,7 +17,34 @@ Data on Bitcoin prices has been fetched using the API provided by Coingecko for 
 
 NOTE: This deep learning prediction analysis is by no means an investment recommendation.
 
-![download](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/7ed0a2da-cb8d-4755-83e4-a933f923e237)
+![btc-33](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/7cd1a7f6-7213-4242-aab9-a27dd0317709)
+
+
+LSTM MODEL ARCHITECTURE
+
+The correct LSTM model architecture is as follows:
+
+The model starts with a Sequential container for stacking layers.
+
+The first layer is an LSTM layer with 128 units (cells), and it is set to return sequences (return_sequences=True) because the subsequent LSTM layer requires sequences as input. The input shape is specified as (x_train.shape[1], 1), where x_train.shape[1] represents the number of time steps, and 1 is the number of features at each time step.
+
+A Dropout layer with a dropout rate of 0.2 is added after the first LSTM layer. The Dropout layer helps prevent overfitting by randomly setting 20% of the LSTM layer's output to zero during training.
+
+The second layer is another LSTM layer with 64 units, also set to return sequences.
+
+Another Dropout layer with a dropout rate of 0.2 follows the second LSTM layer.
+
+The third layer is an LSTM layer with 32 units, and it does not return sequences as it is the final LSTM layer in the sequence.
+
+Finally, a Dense layer with 1 unit is added. This layer will be responsible for predicting the output, which in this case is the closing price.
+
+PREDICTION ANALYSIS VISUALIZATION
+
+![Screenshot_12](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/ae2b674b-14ec-4cb2-954b-f12c2b24059a)
+
+FUTURE PREDICTION ANALYSIS VISUALIZATION
+
+![Screenshot_11](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/76faaa6a-b26f-46f8-887c-fb9290080b78)
 
 
 
