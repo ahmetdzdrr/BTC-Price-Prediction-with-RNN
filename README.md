@@ -13,5 +13,11 @@ LSTM is a specialized type of RNN designed to address the issue of handling long
 ![1_7cMfenu76BZCzdKWCfBABA](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/6fab9963-4ce8-4aaa-96ae-cda9d575951c)
 
 
+Data on Bitcoin prices has been fetched using the API provided by Coingecko for the years 2016 to 2023, including the closing prices. The closing prices for a 60-day period have been used to predict the closing price. Training and testing data have been prepared for the model. After training and testing the data, predictions for the closing price for the next 30 days are sought.
+
+NOTE: This deep learning prediction analysis is by no means an investment recommendation.
+
+![download](https://github.com/ahmetdzdrr/BTC-Price-Prediction-with-RNN/assets/117534684/7ed0a2da-cb8d-4755-83e4-a933f923e237)
+
 
 
